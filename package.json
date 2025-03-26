@@ -1,5 +1,5 @@
 {
-  "name": "my-turborepo",
+  "name": "gamdom",
   "private": true,
   "scripts": {
     "build": "turbo run build",
