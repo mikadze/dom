@@ -1,0 +1,9 @@
+{
+  "name": "@repo/shared",
+  "version": "1.0.0",
+  "main": "./index.js",
+  "types": "./src/index.ts",
+  "dependencies": {
+    "typescript": "^5.8.2"
+  }
+}

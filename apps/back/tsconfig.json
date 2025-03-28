@@ -1,0 +1,25 @@
+{
+  "extends": "@repo/typescript-config/node.base.json",
+  "compilerOptions": {
+    "emitDecoratorMetadata": true, // Required for TypeORM
+    "experimentalDecorators": true,
+    "tsBuildInfoFile": "tsconfig.tsbuildinfo",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "dist",
+    "build",
+    "tests"
+  ],
+  "ts-node": {
+    "swc": true
+  }
+}
