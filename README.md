@@ -5,29 +5,6 @@
 - **PostgreSQL**: Installed and running locally (or adjust for your database)
 - **Git**: To clone the repository
 
-Here’s an index.mdx file for your movie app, written in MDX format. MDX combines Markdown with JSX, allowing you to include React components alongside documentation. This file can serve as your project’s README or be used in a Next.js app with MDX support (e.g., via @next/mdx). I’ll adapt the earlier README instructions into MDX, adding some interactivity with hypothetical React components.
-
-index.mdx
-mdx
-
-Collapse
-
-Wrap
-
-## Copy
-
-title: Movie App
-description: A full-stack movie session booking app built with Next.js and TypeORM
-
----
-
-import { CodeBlock } from './components/CodeBlock'; // Hypothetical component
-import { Button } from './components/Button'; // Hypothetical component
-
-# Movie App
-
-A full-stack application for booking movie sessions, built with **Next.js** (frontend) and **TypeORM/Node.js** (backend) in a `pnpm` monorepo.
-
 ## Prerequisites
 
 - **Node.js**: v18 or later
