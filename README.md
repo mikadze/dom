@@ -5,13 +5,6 @@
 - **PostgreSQL**: Installed and running locally (or adjust for your database)
 - **Git**: To clone the repository
 
-## Prerequisites
-
-- **Node.js**: v18 or later
-- **pnpm**: Install globally with `npm install -g pnpm`
-- **PostgreSQL**: Installed and running locally (or adjust for your database)
-- **Git**: To clone the repository
-
 ## Setup Instructions
 
 Follow these steps to set up and run the application locally.
