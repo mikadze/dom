@@ -41,22 +41,18 @@ Follow these steps to set up and run the application locally.
 
 ### 1. Clone the Repository
 
-<CodeBlock>
-{`
+```bash
 git clone <repository-url>
 cd my-movie-app
-`}
-</CodeBlock>
+```
 
 ### 2. Install Dependencies
 
 From the root directory, install dependencies for all packages:
 
-<CodeBlock>
-{`
+```bash
 pnpm install
-`}
-</CodeBlock>
+```
 
 ### 3. Set Up the Database
 
@@ -64,13 +60,9 @@ The app uses PostgreSQL. Ensure the database is created before running the app.
 
 - **Create the Database**:
 
-<CodeBlock language="bash">
-{`
-psql -U postgres
+```bash
 CREATE DATABASE dom;
-\\q
-`}
-</CodeBlock>
+```
 
 > Replace `postgres` with your PostgreSQL username if different. The app auto-creates tables via TypeORM’s `synchronize: true` (development only).
 
@@ -80,26 +72,22 @@ Copy the example `.env` file and update it:
 
 - **Copy the Example**:
 
-<CodeBlock>
-{`
+```bash
 cp apps/back/.env.example apps/back/.env
-`}
-</CodeBlock>
+```
 
 - **Edit `.env`**:
 
 and update the variables:
 
-<CodeBlock language="env">
-{`
+```
 DB_HOST=localhost
 DB_PORT=5432
 DB_USER=postgres
 DB_PASSWORD=your_password
 DB_NAME=movie_app_db
 PORT=5000
-`}
-</CodeBlock>
+```
 
 Adjust values as needed (e.g., password, port).
 
@@ -107,19 +95,15 @@ Populate the database with initial data:
 
 - Navigate to the backend:
 
-<CodeBlock>
-{`
+```bash
 cd apps/back
-`}
-</CodeBlock>
+```
 
 - Run the seed script:
 
-<CodeBlock>
-{`
+```bash
 pnpm seed
-`}
-</CodeBlock>
+```
 
 ### 6. Run the Application
 
@@ -127,9 +111,7 @@ Start both the backend and frontend:
 
 - From the root directory:
 
-<CodeBlock>
-{`
+```bash
 cd ../.. # Back to root
 pnpm dev
-`}
-</CodeBlock>
+```
